@@ -1,6 +1,6 @@
-.vs
-LeetCode.sln
+.vs/
+LeetCode.sln/
 Problems/Debug/
-Problems/Problems.vcxproj
-Problems/Problems.vcxproj.filters
-Problems/Problems.vcxproj.user
+Problems/Problems.vcxproj/
+Problems/Problems.vcxproj.filters/
+Problems/Problems.vcxproj.user/
