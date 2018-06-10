@@ -1,16 +1,55 @@
+#include <string>
+
 class Solution {
 public:
-	int lengthOfLongestSubstring(string s) {
-		int resultLength = 0;
+	int lengthOfLongestSubstring(std::string s) {
+
+		// New one
+		int lengthOfLongestSubstring(std::string s)
+		{
+			int maxLength = 0;
+			for (int i = 0; i < s.length() - maxLength; ++i)
+			{
+				int tempLength = checkCharacter(s.substr(i));
+				if (maxLength < tempLength)
+				{
+					maxLength = tempLength;
+				}
+			}
+			return maxLength;
+		}
+
+		int checkCharacter(string s)
+		{
+			bool buffer[128] = { false };
+			int tempLength = 0;
+			for (int j = 0; j < s.length(); ++j)
+			{
+				if (!buffer[s[j]])
+				{
+					buffer[s[j]] = true;
+					tempLength++;
+				}
+				else
+				{
+					break;
+				}
+			}
+			return tempLength;
+		}
+
+		//Old one
+
+		/*int resultLength = 0;
 		for (int i = 0; i < s.length() - resultLength; ++i)
 		{
-			string buffer = "";
+			std::string buffer = "";
 			bool isDone = false;
 			for (int j = i; !isDone && j < s.length(); ++j)
 			{
 				if (!contains(buffer, s[j]))
 				{
-					buffer += string(1, s[j]);
+					buffer += std::string(1, s[j]);
 				}
 				else
 				{
@@ -22,10 +61,10 @@ public:
 				resultLength = buffer.length();
 			}
 		}
-		return resultLength;
+		return resultLength;*/
 	}
 
-	bool contains(string buffer, char character)
+	/*bool contains(std::string buffer, char character)
 	{
 		bool answer = false;
 		for (int i = 0; !answer && i < buffer.length(); ++i)
@@ -36,14 +75,5 @@ public:
 			}
 		}
 		return answer;
-	}
-
-	//     string char2String(char character) {
-	//         stringstream ss;
-	//         string temp;
-	//         ss << character;
-	//         ss >> temp;
-
-	//         return temp;
-	//     }
+	}*/
 };
