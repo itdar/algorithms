@@ -1,6 +1,8 @@
+#include <string>
+
 class Solution {
 public:
-	string longestPalindrome(string s) {
+	std::string longestPalindrome(std::string s) {
 
 		// string resultString = string(1, s[0]);
 
@@ -28,7 +30,7 @@ public:
 			}
 		}
 
-		return string(1, s[0]);
+		return std::string(1, s[0]);
 	}
 
 };
