@@ -1,9 +1,9 @@
 #include <string>
 
+using namespace std;
+
 class Solution {
 public:
-	int lengthOfLongestSubstring(std::string s) {
-
 		// New one
 		int lengthOfLongestSubstring(std::string s)
 		{
@@ -62,7 +62,6 @@ public:
 			}
 		}
 		return resultLength;*/
-	}
 
 	/*bool contains(std::string buffer, char character)
 	{
