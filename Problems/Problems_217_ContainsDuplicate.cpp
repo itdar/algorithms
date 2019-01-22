@@ -26,17 +26,17 @@ public:
 };
 
 
-int main(int argc, char *argv[]) {
-
-	cout << "Hello world" << endl;
-
-	//std::vector<int> tempVector = { 1, 2, 3, 1, 5 };
-	std::vector<int> tempVector = { 0 };
-
-	Solution sln;
-	
-	bool answer = sln.containsDuplicate(tempVector);
-
-	cout << answer << endl;
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	cout << "Hello world" << endl;
+//
+//	//std::vector<int> tempVector = { 1, 2, 3, 1, 5 };
+//	std::vector<int> tempVector = { 0 };
+//
+//	Solution sln;
+//	
+//	bool answer = sln.containsDuplicate(tempVector);
+//
+//	cout << answer << endl;
+//
+//}
