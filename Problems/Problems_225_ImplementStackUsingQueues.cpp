@@ -49,18 +49,18 @@ public:
 */
 
 
-int main(int args, char *argv[]) {
-
-	cout << "Hello world" << endl;
-
-	MyStack stack;
-
-	stack.push(1);
-	stack.push(2);
-	cout << stack.top() << endl;   // returns 2
-	cout << stack.pop() << endl;   // returns 2
-	cout << stack.empty() << endl; // returns false
-
-}
+//int main(int args, char *argv[]) {
+//
+//	cout << "Hello world" << endl;
+//
+//	MyStack stack;
+//
+//	stack.push(1);
+//	stack.push(2);
+//	cout << stack.top() << endl;   // returns 2
+//	cout << stack.pop() << endl;   // returns 2
+//	cout << stack.empty() << endl; // returns false
+//
+//}
 
 
