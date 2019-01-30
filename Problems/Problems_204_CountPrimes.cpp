@@ -12,18 +12,18 @@ public:
 		if (n < 2)
 			return 0;
 
-		std::vector<bool> primeMap(n - 2, true);
+		std::vector<bool> sieveMap(n - 2, true);
 
-		int length = primeMap.size();
+		int length = sieveMap.size();
 
 		for (int i = 0; i < length; ++i)
 		{
-			if (primeMap[i] == true)
+			if (sieveMap[i] == true)
 			{
 				++count;
 				for (int j = i + (i + 2); j < length; j = j + (i + 2))
 				{
-					primeMap[j] = false;
+					sieveMap[j] = false;
 				}
 			}
 		}
@@ -32,10 +32,10 @@ public:
 };
 
 
-int main(int args, char *argv[]) {
-
-	Solution sln;
-
-	cout << sln.countPrimes(10) << endl;
-
-}
+//int main(int args, char *argv[]) {
+//
+//	Solution sln;
+//
+//	cout << sln.countPrimes(10) << endl;
+//
+//}
