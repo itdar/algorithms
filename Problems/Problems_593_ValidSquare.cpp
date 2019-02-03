@@ -49,10 +49,10 @@ public:
 	}
 };
 
-int main(int args, char *argv[]) {
-
-
-	cout << "Hello" << endl;
-
-
-}
+//int main(int args, char *argv[]) {
+//
+//
+//	cout << "Hello" << endl;
+//
+//
+//}
