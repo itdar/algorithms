@@ -200,19 +200,19 @@ private:
 
 
 
-int main(int args, char *argv[]) {
-
-	//vector<int> data = { 240,162,138,147,145 };			// 0
-	//vector<int> data = { 145 };					// 0
-	//vector<int> data = { 230, 136, 145 };			// 1
-	//vector<int> data = { 10 };						// 1
-	vector<int> data = { 248,130,130,130 };				// 0
-
-	Solution sln;
-	
-	bool answer = sln.validUtf8(data);
-
-
-	std::cout << endl << "answer : " << answer << endl;
-	
-}
+//int main(int args, char *argv[]) {
+//
+//	//vector<int> data = { 240,162,138,147,145 };			// 0
+//	//vector<int> data = { 145 };					// 0
+//	//vector<int> data = { 230, 136, 145 };			// 1
+//	//vector<int> data = { 10 };						// 1
+//	vector<int> data = { 248,130,130,130 };				// 0
+//
+//	Solution sln;
+//	
+//	bool answer = sln.validUtf8(data);
+//
+//
+//	std::cout << endl << "answer : " << answer << endl;
+//	
+//}
