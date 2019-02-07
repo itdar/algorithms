@@ -50,21 +50,21 @@ public:
 	//}
 };
 
-int main(int args, char *argv[]) {
-	
-	std::vector<int> inputVector;
-	inputVector.push_back(3);
-	inputVector.push_back(1);
-	inputVector.push_back(2);
-	inputVector.push_back(4);
-
-	Solution sln;
-	vector<int> outputVector = sln.sortArrayByParity(inputVector);
-
-	for (int i = 0; i < outputVector.size(); ++i)
-	{
-		cout << outputVector[i] << endl;
-	}
-	
-	
-}
+//int main(int args, char *argv[]) {
+//	
+//	std::vector<int> inputVector;
+//	inputVector.push_back(3);
+//	inputVector.push_back(1);
+//	inputVector.push_back(2);
+//	inputVector.push_back(4);
+//
+//	Solution sln;
+//	vector<int> outputVector = sln.sortArrayByParity(inputVector);
+//
+//	for (int i = 0; i < outputVector.size(); ++i)
+//	{
+//		cout << outputVector[i] << endl;
+//	}
+//	
+//	
+//}
