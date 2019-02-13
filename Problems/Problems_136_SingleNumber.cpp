@@ -87,18 +87,18 @@ public:
 };
 
 
-int main(int argc, char *argv[]) {
-
-	//cout << "Hell" << endl;
-	vector<int> input; // 2 4 4 2 3 5 3
-	input.push_back(2);
-	input.push_back(2);
-	input.push_back(3);
-	input.push_back(5);
-	input.push_back(3);
-
-	Solution sln;
-	cout << sln.singleNumber(input) << endl;
-
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	//cout << "Hell" << endl;
+//	vector<int> input; // 2 4 4 2 3 5 3
+//	input.push_back(2);
+//	input.push_back(2);
+//	input.push_back(3);
+//	input.push_back(5);
+//	input.push_back(3);
+//
+//	Solution sln;
+//	cout << sln.singleNumber(input) << endl;
+//
+//
+//}
