@@ -43,10 +43,10 @@ private:
 
 
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-	cout << sln.addDigits(38) << endl;
-	
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//	cout << sln.addDigits(38) << endl;
+//	
+//
+//}
