@@ -61,10 +61,10 @@ public:
 };
 
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-
-	cout << sln.detectCapitalUse("Leetcode") << endl;
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//
+//	cout << sln.detectCapitalUse("Leetcode") << endl;
+//
+//}
