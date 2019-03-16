@@ -13,16 +13,33 @@ using namespace std;
 class Solution {
 public:
 	void moveZeroes(vector<int>& nums) {
-		int zeroCount = 0;
-		for (int i = 0; i < nums.size() - zeroCount; ++i)
+
+		int count = 0;
+		for (int i = 0; i < nums.size(); ++i)
 		{
 			if (nums[i] == 0)
 			{
+				++count;
 				nums.erase(nums.begin() + i);
-				nums.push_back(0);
-				++zeroCount;
 				--i;
 			}
 		}
+
+		for (int i = 0; i < count; ++i)
+		{
+			nums.push_back(0);
+		}
+
+		//int zeroCount = 0;
+		//for (int i = 0; i < nums.size() - zeroCount; ++i)
+		//{
+		//	if (nums[i] == 0)
+		//	{
+		//		nums.erase(nums.begin() + i);
+		//		nums.push_back(0);
+		//		++zeroCount;
+		//		--i;
+		//	}
+		//}
 	}
 };
