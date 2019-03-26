@@ -28,17 +28,17 @@ public:
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	vector<int> testVector = { 4, 3, 2, 7, 8, 2, 3, 1 };
-
-	Solution sln;
-
-	vector<int> resultVector = sln.findDuplicates(testVector);
-
-	for (int i = 0; resultVector.size(); ++i)
-	{
-		cout << resultVector[i] << endl;
-	}
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	vector<int> testVector = { 4, 3, 2, 7, 8, 2, 3, 1 };
+//
+//	Solution sln;
+//
+//	vector<int> resultVector = sln.findDuplicates(testVector);
+//
+//	for (int i = 0; resultVector.size(); ++i)
+//	{
+//		cout << resultVector[i] << endl;
+//	}
+//
+//}
