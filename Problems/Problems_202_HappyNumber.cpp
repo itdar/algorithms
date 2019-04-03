@@ -33,12 +33,12 @@ private:
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	//cout << "Hello" << endl;
-
-	Solution sln;
-	//cout << sln.isHappy(19) << endl;
-	cout << sln.isHappy(7) << endl;
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	//cout << "Hello" << endl;
+//
+//	Solution sln;
+//	//cout << sln.isHappy(19) << endl;
+//	cout << sln.isHappy(7) << endl;
+//
+//}
