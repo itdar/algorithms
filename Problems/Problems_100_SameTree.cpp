@@ -27,18 +27,22 @@ private:
 	bool isSameTreeRecursive(TreeNode* p, TreeNode* q) {
 		if (p != 0 && q != 0)
 			if (p->val == q->val && isSameTreeRecursive(p->left, q->left) && isSameTreeRecursive(p->right, q->right))
+			{
 				return true;
-			else
-				if (p == 0 && q == 0)
-					return true;
+			}
+			else {}
+		else {
+			if (p == 0 && q == 0)
+				return true;
+		}
 		return false;
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-
-	cout << sln.isSameTree(NULL, NULL) << endl;
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//
+//	cout << sln.isSameTree(NULL, NULL) << endl;
+//
+//}
