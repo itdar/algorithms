@@ -40,12 +40,12 @@ public:
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-
-	vector<int> input = { 3, 2, 3 };
-
-	cout << sln.majorityElement(input) << endl;
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//
+//	vector<int> input = { 3, 2, 3 };
+//
+//	cout << sln.majorityElement(input) << endl;
+//
+//}
