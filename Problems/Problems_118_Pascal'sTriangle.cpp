@@ -33,17 +33,17 @@ public:
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-	
-	vector<vector<int>> result = sln.generate(3);
-
-	for (int i = 0; i < result.size(); ++i) {
-		for (int j = 0; j < result.at(i).size(); ++j) {
-			cout << result.at(i).at(j);
-		}
-		cout << endl;
-	}
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//	
+//	vector<vector<int>> result = sln.generate(3);
+//
+//	for (int i = 0; i < result.size(); ++i) {
+//		for (int j = 0; j < result.at(i).size(); ++j) {
+//			cout << result.at(i).at(j);
+//		}
+//		cout << endl;
+//	}
+//
+//}
