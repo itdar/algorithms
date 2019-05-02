@@ -31,14 +31,14 @@ public:
 	}
 };
 
-int main(int argc, char *argv[]) {
-
-	Solution sln;
-
-	vector<int> result = sln.getRow(3);
-
-	for (int i = 0; i < result.size(); ++i) {
-		cout << result.at(i) << endl;
-	}
-
-}
+//int main(int argc, char *argv[]) {
+//
+//	Solution sln;
+//
+//	vector<int> result = sln.getRow(3);
+//
+//	for (int i = 0; i < result.size(); ++i) {
+//		cout << result.at(i) << endl;
+//	}
+//
+//}
