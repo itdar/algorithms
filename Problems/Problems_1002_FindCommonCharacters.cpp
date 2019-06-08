@@ -71,16 +71,16 @@ public:
 	}
 };
 
-void main(int argc, char *argv[]) {
-	Solution sln;
-	
-	//vector<string> testVector = { "bella", "label", "roller" };
-	vector<string> testVector = { "cool", "lock", "cook" };
-
-	vector<string> result = sln.commonChars(testVector);
-
-	cout << result.size() << endl;
-	for (int i = 0; i < result.size(); ++i) {
-		cout << result[i] << " ";
-	}
-}
+//void main(int argc, char *argv[]) {
+//	Solution sln;
+//	
+//	//vector<string> testVector = { "bella", "label", "roller" };
+//	vector<string> testVector = { "cool", "lock", "cook" };
+//
+//	vector<string> result = sln.commonChars(testVector);
+//
+//	cout << result.size() << endl;
+//	for (int i = 0; i < result.size(); ++i) {
+//		cout << result[i] << " ";
+//	}
+//}
