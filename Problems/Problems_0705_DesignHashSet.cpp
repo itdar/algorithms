@@ -21,6 +21,7 @@ public:
 	void remove(int key) {
 		//erase-remove idiom stl technique
 		list->erase(std::remove(list->begin(), list->end(), key), list->end());
+		//std::remove()
 	}
 
 	/** Returns true if this set contains the specified element */
