@@ -40,11 +40,11 @@ public:
 	}
 };
 
-void main(int argc, char *argv[]) {
-
-	vector<int> inputVector = { 0, 0, 1, 0, 1 };
-
-	Solution sln;
-	cout << sln.canPlaceFlowers(inputVector, 1) << endl;
-
-}
+//void main(int argc, char *argv[]) {
+//
+//	vector<int> inputVector = { 0, 0, 1, 0, 1 };
+//
+//	Solution sln;
+//	cout << sln.canPlaceFlowers(inputVector, 1) << endl;
+//
+//}
