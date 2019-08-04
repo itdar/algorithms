@@ -23,7 +23,7 @@ public:
 		for (int i = 0; i < nums.size(); ++i) {
 			cout << "num : " << num << " " << " nums[i] : " << nums[i] << "  ";
 			num = num ^ nums[i];
-			cout << num << endl << endl;
+			cout << "\n" << num << endl << endl << endl;
 		}
 		return num;
 	}
@@ -96,6 +96,10 @@ public:
 //	input.push_back(3);
 //	input.push_back(5);
 //	input.push_back(3);
+//	input.push_back(4);
+//	input.push_back(4);
+//	input.push_back(1);
+//	input.push_back(1);
 //
 //	Solution sln;
 //	cout << sln.singleNumber(input) << endl;

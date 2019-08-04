@@ -44,18 +44,18 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	vector<int> temp1 = { 1,2,3,4 };
-	vector<int> temp2 = { 5,1,2,3 };
-	vector<int> temp3 = { 9,5,1,2 };
-	//vector<int> temp1 = { 83 };
-	//vector<int> temp2 = { 64 };
-	//vector<int> temp3 = { 57 };
-	vector<vector<int>> tempVec;
-	tempVec.push_back(temp1);
-	tempVec.push_back(temp2);
-	tempVec.push_back(temp3);
-
-	Solution sln;
-	cout << sln.isToeplitzMatrix(tempVec) << endl;
-}
+//int main(int argc, char* argv[]) {
+//	vector<int> temp1 = { 1,2,3,4 };
+//	vector<int> temp2 = { 5,1,2,3 };
+//	vector<int> temp3 = { 9,5,1,2 };
+//	//vector<int> temp1 = { 83 };
+//	//vector<int> temp2 = { 64 };
+//	//vector<int> temp3 = { 57 };
+//	vector<vector<int>> tempVec;
+//	tempVec.push_back(temp1);
+//	tempVec.push_back(temp2);
+//	tempVec.push_back(temp3);
+//
+//	Solution sln;
+//	cout << sln.isToeplitzMatrix(tempVec) << endl;
+//}
