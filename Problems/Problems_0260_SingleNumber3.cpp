@@ -60,26 +60,26 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-
-	Solution sln;
-
-	vector<int> testVector;
-	testVector.push_back(2);
-	testVector.push_back(3);
-	testVector.push_back(2);
-	testVector.push_back(5);
-	testVector.push_back(4);
-	testVector.push_back(4);
-	testVector.push_back(1);
-	testVector.push_back(1);
-	testVector.push_back(8);
-	testVector.push_back(8);
-
-	vector<int> result = sln.singleNumber(testVector);
-	cout << "" << endl;
-	for (int i = 0; i < result.size(); ++i) {
-		cout << result[i] << " ";
-	}
-	cout << endl;
-}
+//int main(int argc, char* argv[]) {
+//
+//	Solution sln;
+//
+//	vector<int> testVector;
+//	testVector.push_back(2);
+//	testVector.push_back(3);
+//	testVector.push_back(2);
+//	testVector.push_back(5);
+//	testVector.push_back(4);
+//	testVector.push_back(4);
+//	testVector.push_back(1);
+//	testVector.push_back(1);
+//	testVector.push_back(8);
+//	testVector.push_back(8);
+//
+//	vector<int> result = sln.singleNumber(testVector);
+//	cout << "" << endl;
+//	for (int i = 0; i < result.size(); ++i) {
+//		cout << result[i] << " ";
+//	}
+//	cout << endl;
+//}
