@@ -15,7 +15,7 @@ public:
 		for (int i = 0; i < xBit.size(); ++i)
 			if (xBit[i] == yBit[i])
 				++count;
-		return count;
+		return 32 - count;
 	}
 };
 
