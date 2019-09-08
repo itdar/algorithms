@@ -79,21 +79,21 @@ public:
 	}
 };
 
-int main(int argc, char*(*argv)) {
-
-	//cout << "Hell" << endl;
-
-	//vector<int> temp1 = { 0,1,0,0 };
-	//vector<int> temp2 = { 1,1,1,0 };
-	//vector<int> temp3 = { 0,1,0,0 };
-	//vector<int> temp4 = { 1,1,0,0 };
-	vector<int> temp1 = { 0, 0, 1 };
-	vector<vector<int>> inputVec;
-	inputVec.push_back(temp1);
-	//inputVec.push_back(temp2);
-	//inputVec.push_back(temp3);
-	//inputVec.push_back(temp4);
-
-	Solution sln;
-	cout << sln.islandPerimeter(inputVec) << endl;
-}
+//int main(int argc, char*(*argv)) {
+//
+//	//cout << "Hell" << endl;
+//
+//	//vector<int> temp1 = { 0,1,0,0 };
+//	//vector<int> temp2 = { 1,1,1,0 };
+//	//vector<int> temp3 = { 0,1,0,0 };
+//	//vector<int> temp4 = { 1,1,0,0 };
+//	vector<int> temp1 = { 0, 0, 1 };
+//	vector<vector<int>> inputVec;
+//	inputVec.push_back(temp1);
+//	//inputVec.push_back(temp2);
+//	//inputVec.push_back(temp3);
+//	//inputVec.push_back(temp4);
+//
+//	Solution sln;
+//	cout << sln.islandPerimeter(inputVec) << endl;
+//}
