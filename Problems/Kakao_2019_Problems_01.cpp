@@ -19,12 +19,11 @@ int solution(string s) {
 	if (s.length() == 1)
 		return 1;
 
-	int answer = 0;
 	int substringRange = s.length() / 2;
 	// 2.
-	vector<string> resultString;
+	vector<string> resultStrings;
 	for (int i = 0; i < substringRange; ++i) {
-		resultString.push_back("");
+		resultStrings.push_back("");
 	}
 	// 3.
 	for (int i = 0; i + 1 <= substringRange; ++i) {
@@ -34,37 +33,36 @@ int solution(string s) {
 		while (j + (i + 1) <= s.length()) {
 			string currentStr = s.substr(j, i + 1);
 			nextString = s.substr(j + (i + 1), i + 1);
-			cout << " " << "currentStr : " << currentStr << " " << "nextString : " << nextString << endl;
+			//cout << " " << "currentStr : " << currentStr << " " << "nextString : " << nextString << endl;
 			if (currentStr == nextString) {
 				++count;
 			}
 			else {
 				if (count == 1) {
-					resultString[i] += currentStr;
+					resultStrings[i] += currentStr;
 				}
 				else {
 					stringstream ss;
 					ss << count;
-					resultString[i] += ss.str();
-					resultString[i] += currentStr;
+					resultStrings[i] += ss.str();
+					resultStrings[i] += currentStr;
 
 					count = 1;
 				}
 			}
 			j += (i + 1);
 		}
-		//j -= i;
 		while (j < s.length()) {
-			resultString[i] += s[j];
+			resultStrings[i] += s[j];
 			++j;
 		}
 	}
 
 	// 4.
-	int smallestLength = resultString[0].length();
-	for (int i = 1; i < resultString.size(); ++i) {
-		if (smallestLength > resultString[i].length()) {
-			smallestLength = resultString[i].length();
+	int smallestLength = resultStrings[0].length();
+	for (int i = 1; i < resultStrings.size(); ++i) {
+		if (smallestLength > resultStrings[i].length()) {
+			smallestLength = resultStrings[i].length();
 		}
 	}
 
