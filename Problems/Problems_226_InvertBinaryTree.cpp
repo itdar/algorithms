@@ -15,38 +15,25 @@ struct TreeNode {
 class Solution {
 public:
 	TreeNode* invertTree(TreeNode* root) {
+		TreeNode* resultRoot = 0;
+
 		if (root != 0) {
-			vector<int> *treeBuff = new vector<int>();
+			resultRoot = new TreeNode(root->val);
 
-			makeVector(treeBuff, root);
-
-			if (treeBuff->size() > 0)
-				makeTree(treeBuff, root);
+			recursiveInvertTree(root, resultRoot);
 		}
-		return root;
+		return resultRoot;
 	}
 private:
-	void makeVector(vector<int> *treeBuff, TreeNode* node) {
-		makeVectorRecursive(treeBuff, node);
-	}
-	void makeVectorRecursive(vector<int> *treeBuff, TreeNode* node) {
-		if (node->left != 0)
-			makeVectorRecursive(treeBuff, node->left);
+	void recursiveInvertTree(TreeNode* originNode, TreeNode* resultNode) {
+		if (originNode->left != 0) {
+			resultNode->right = new TreeNode(originNode->left->val);
+			recursiveInvertTree(originNode->left, resultNode->right);
+		}
 
-		if (node != 0)
-			treeBuff->push_back(node->val);
-
-		if (node->right != 0)
-			makeVectorRecursive(treeBuff, node->right);
-	}
-
-	void makeTree(vector<int> *treeBuff, TreeNode* node) {
-		if (node->right != 0)
-			makeTree(treeBuff, node->right);
-
-		node->val = treeBuff->at(0);
-		treeBuff->erase(treeBuff->begin() + 0);
-		
-		makeTree(treeBuff, node->left);
+		if (originNode->right != 0) {
+			resultNode->left = new TreeNode(originNode->right->val);
+			recursiveInvertTree(originNode->right, resultNode->left);
+		}
 	}
 };
