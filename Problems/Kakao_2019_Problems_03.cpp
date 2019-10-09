@@ -245,31 +245,31 @@ bool solution(vector<vector<int>> key, vector<vector<int>> lock) {
 	return isOpened;
 }
 
-int main() {
-	vector<vector<int>> testKey1;
-	vector<int> tempVec11 = { 0,0,0 };
-	vector<int> tempVec12 = { 1,0,0 };
-	vector<int> tempVec13 = { 0,1,1 };
-	testKey1.push_back(tempVec11);
-	testKey1.push_back(tempVec12);
-	testKey1.push_back(tempVec13);
-
-	vector<vector<int>> testLock1;
-	vector<int> tempVec21 = { 1,1,1 };
-	vector<int> tempVec22 = { 0,1,1 };
-	vector<int> tempVec23 = { 1,0,1 };
-	testLock1.push_back(tempVec21);
-	testLock1.push_back(tempVec22);
-	testLock1.push_back(tempVec23);
-	
-	cout << endl;
-	if (solution(testKey1, testLock1)) {
-		cout << "Opened!" << endl;
-	}
-	else {
-		cout << "Locked" << endl;
-	}
-
-
-	return 0;
-}
+//int main() {
+//	vector<vector<int>> testKey1;
+//	vector<int> tempVec11 = { 0,0,0 };
+//	vector<int> tempVec12 = { 1,0,0 };
+//	vector<int> tempVec13 = { 0,1,1 };
+//	testKey1.push_back(tempVec11);
+//	testKey1.push_back(tempVec12);
+//	testKey1.push_back(tempVec13);
+//
+//	vector<vector<int>> testLock1;
+//	vector<int> tempVec21 = { 1,1,1 };
+//	vector<int> tempVec22 = { 0,1,1 };
+//	vector<int> tempVec23 = { 1,0,1 };
+//	testLock1.push_back(tempVec21);
+//	testLock1.push_back(tempVec22);
+//	testLock1.push_back(tempVec23);
+//	
+//	cout << endl;
+//	if (solution(testKey1, testLock1)) {
+//		cout << "Opened!" << endl;
+//	}
+//	else {
+//		cout << "Locked" << endl;
+//	}
+//
+//
+//	return 0;
+//}
